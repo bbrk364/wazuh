@@ -19,7 +19,7 @@
 #endif
 
 #include "shared.h"
-#include "syscheck.h"
+#include "../include/syscheck.h"
 #include "os_crypto/md5_sha1_sha256/md5_sha1_sha256_op.h"
 #include "rootcheck/rootcheck.h"
 #include "db/include/db.h"
