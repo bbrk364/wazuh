@@ -305,6 +305,9 @@ static void transaction_callback(ReturnTypeCallback resultType, const cJSON* res
                                             changed_attributes);
         }
     }
+        if (diff != NULL) {
+            cJSON_AddStringToObject(data, "content_changes", diff);
+        }
 
     if (configuration->tag != NULL) {
         cJSON_AddStringToObject(data, "tags", configuration->tag);
